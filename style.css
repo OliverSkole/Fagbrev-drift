@@ -1,0 +1,74 @@
+/* Kroppsstiler */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* divstiller*/
+div {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Etikettstiler */
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Input, radio, and button styles */
+input[type="text"],
+input[type="radio"],
+button {
+    margin-bottom: 12px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Knappestiler */
+button {
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #0056b3;
+}
+
+#Nullstill{
+    background-color: red;
+}
+
+#Nullstill:hover{
+    background-color: #ad0000;
+}
+
+/* Visningsstiler for antall stemmer */
+#voteCount {
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+/* Lerretsstiler */
+canvas {
+    width: 100%;
+    max-width: 80vh; 
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}

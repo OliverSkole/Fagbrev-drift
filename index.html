@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="Icon" href="Icon_norge.png">
+    <title>Stemme</title>
+</head>
+
+<body>
+    <div>
+        <!-- Innput for navn eller ID -->
+        <label for="Navn">Skriv navn eller ID</label>
+        <input type="text" name="Navn">
+        <br>
+        <!-- Radioknapper for politiske partier -->
+        <label for="Parti1">Arbeiderpartiet</label>
+        <input type="radio" class="radioCheck" name="Parti" id="c01" onclick="check(this) ;" value="Arbeiderpartiet">
+        <br>
+        <label for="Parti2">Venstre</label>
+        <input type="radio" class="radioCheck" name="Parti" id="c02" onclick="check(this) ;" value="Venstre">
+        <br>
+        <label for="Parti3">Senterpartiet</label>
+        <input type="radio" class="radioCheck" name="Parti" id="c03" onclick="check(this) ;" value="Senterpartiet">
+        <br>
+        <label for="Parti4">Fremskrittspartiet</label>
+        <input type="radio" class="radioCheck" name="Parti" id="c04" onclick="check(this) ;" value="Fremskrittspartiet">
+        <br>
+        <label for="Parti5">Høyre</label>
+        <input type="radio" class="radioCheck" name="Parti" id="c05" onclick="check(this) ;" value="Høyre">
+        <br>
+        <!-- Knapp for å stemme -->
+        <button onclick="vote();">stem</button>
+        <!-- Vis stemmetelling -->
+        <div id="voteCount">Votes: 0</div>
+        <!-- Reset button -->
+        <button id="Nullstill" onclick="resetVoting();">Nullstill</button>
+        <!-- Lerret for diagram -->
+        <canvas id="myChart"></canvas>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
